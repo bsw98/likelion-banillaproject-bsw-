@@ -8,9 +8,20 @@ li{
   list-style: none;
 }
 html {
+  letter-spacing: -1px;
   font-size: 10px;
 }
-
+input:focus{
+  outline:none;
+}
+.maincolor{
+  color: #5F0080;
+}
+button{
+  border:0;
+  background-color: inherit;
+  cursor: pointer;
+}
 /* 링크 스타일 */
 a {
   color: inherit;
@@ -156,8 +167,45 @@ padding-left: 20px;
 }
 /* 네비게이션 */
 .navigation{
+  font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: #333333;
+  align-items: center;
   height: 72px;
 background-color: aqua;
+display: flex;
+justify-content: space-between;
+font-size: 16px;
+
+}
+.MenuBar{
+  
+  position: relative;
+}
+
+
+.MenuBarList a{
+  margin-right:-1000px;
+  left:-40px;
+  top:299px;
+  position: relative;
+  background-color: olive;
+  display:block;
+  width:247px;
+  
+}
+.MenuBarList a:hover{
+  color: white;
+  background-color: #333333;
+}
+.MenuOther{
+  display: flex;
+}
+.MenuOther li a{
+  border: 1px solid black;
+  display: block;
+  width: 100px;
 }
 /* 메인 */
 .main{
