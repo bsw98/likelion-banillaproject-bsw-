@@ -5,24 +5,23 @@ function handler(){
 let body = document.querySelector('body')
 let button = document.querySelector('.AdClose');
 let MenuButton = document.querySelector('.MenuButton');
+let MenuBar = document.querySelector('.MenuBar');
 let MenuButtonList = document.querySelectorAll('.MenuBar li')
 function ShowMenu(e){
       e = e.target;
-      
-      if(e == button){
-        let AD = document.querySelector('.TopAd');
-        AD.style.display = 'none';
-      }
-      if(e == MenuButton){
-       
-        MenuButtonList.forEach((item)=>{item.style.display = 'block'})
-      }else{
+
+      if(e.parentNode == MenuBar || e.className == "MenuBarList"){
         
+        MenuBar.style.top = '276px';
+        MenuButtonList.forEach((item)=>{item.style.display = 'block'})
+      }
+      else{
+        MenuBar.style.top = 0;
         MenuButtonList.forEach((item)=>{item.style.display = 'none'})
       }
 }
 
 
 
-body.addEventListener('click',ShowMenu);
+body.addEventListener('mouseover',ShowMenu);
 button.addEventListener('click',handler)
