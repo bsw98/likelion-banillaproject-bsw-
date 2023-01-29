@@ -178,6 +178,7 @@ display: flex;
 justify-content: space-between;
 font-size: 16px;
 
+
 }
 .MenuBar{
   position: relative;
@@ -204,9 +205,9 @@ font-size: 16px;
   position: relative;
   color:#333333;
   background-color: white;
-  display: block;
+  display: none;
   width:247px;
-  
+ 
 }
 .MenuBarList:hover{
   color:#5F0080;
@@ -223,6 +224,7 @@ font-size: 16px;
 }
 .MenuOther li a:hover{
   color:#5F0080;
+  text-decoration:underline
 }
 .Notice{
   color: #6B6B6B;
@@ -245,6 +247,6 @@ background-color: beige;
 }
 /* 배너 */
 .banner{
-  background-color: bisque;
+  background-color: #6B6B6B;
  height: 370px;
 }

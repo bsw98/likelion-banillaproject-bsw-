@@ -6,7 +6,7 @@ let body = document.querySelector('body')
 let button = document.querySelector('.AdClose');
 let MenuButton = document.querySelector('.MenuButton');
 let MenuBar = document.querySelector('.MenuBar');
-let MenuButtonList = document.querySelectorAll('.MenuBar li')
+let MenuButtonList = document.querySelectorAll('.MenuBar li a')
 function ShowMenu(e){
       e = e.target;
 
@@ -16,6 +16,7 @@ function ShowMenu(e){
         MenuButtonList.forEach((item)=>{item.style.display = 'block'})
       }
       else{
+        
         MenuBar.style.top = 0;
         MenuButtonList.forEach((item)=>{item.style.display = 'none'})
       }
