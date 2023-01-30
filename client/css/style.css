@@ -186,8 +186,6 @@ color: #333333;
 display: flex;
 justify-content: space-between;
 font-size: 16px;
-
-
 }
 .MenuBar{
   position: relative;
@@ -208,8 +206,8 @@ font-size: 16px;
 }
 
 .MenuBarList{
+  z-index: 1000;
   margin-right:-1000px;
-
   font-size: 16px;
   position: relative;
   color:#333333;
