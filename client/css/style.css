@@ -1,5 +1,9 @@
 @import url(./reset.css);
 @import url(./normalize.css);
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+
+
 /* 기본 스타일 */
 
 
@@ -12,7 +16,7 @@ li{
   list-style: none;
 }
 html {
-  letter-spacing: -1px;
+  
   font-size: 10px;
 }
 input:focus{
