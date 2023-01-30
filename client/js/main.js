@@ -25,4 +25,17 @@ function ShowMenu(e){
 
 
 body.addEventListener('mouseover',ShowMenu);
-button.addEventListener('click',handler)
+button.addEventListener('click',handler);
+
+
+// 스와이퍼
+
+
+const swiper = new Swiper('.swiper', {
+  autoplay: true,
+  loop: true, // 무한루프로 걸어서 맨 앞으로 후루룩 돌아오는 걸 방지
+  speed: 2000,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+})
