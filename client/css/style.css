@@ -1,5 +1,6 @@
 @import url(./reset.css);
 @import url(./normalize.css);
+@import url(./fontello.css);
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
 
@@ -76,10 +77,12 @@ body{
   color: #FFFFFF;
 }
 
+
 .AdClose{
   right:22%;
   position: absolute;
- cursor: pointer;
+  z-index: 100;
+ 
  border: none;
  background-color: inherit;
 }
@@ -151,9 +154,18 @@ padding-left: 20px;
   position:absolute;
 }
 .RightBanner{
-  gap:35px;
+  
+  gap:12px;
   display:flex;
 }
+.RightBanner a{
+  font-size: 24px;
+  height: 24px;
+}
+.RightBanner a:hover{
+  color:#5F0080;
+}
+
 .TopMenu{
 
   font-weight: 400;
