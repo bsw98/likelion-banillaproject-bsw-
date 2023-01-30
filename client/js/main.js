@@ -1,9 +1,11 @@
+let button = document.querySelector('.AdClose');
 function handler(){
   let AD = document.querySelector('.TopAd');
   AD.style.display = 'none';
 }
-let body = document.querySelector('body')
-let button = document.querySelector('.AdClose');
+button.addEventListener('click',handler);
+
+let body = document.querySelector('body');
 let MenuButton = document.querySelector('.MenuButton');
 let MenuBar = document.querySelector('.MenuBar');
 let MenuButtonList = document.querySelectorAll('.MenuBar li a')
@@ -25,7 +27,6 @@ function ShowMenu(e){
 
 
 body.addEventListener('mouseover',ShowMenu);
-button.addEventListener('click',handler);
 
 
 // 스와이퍼
