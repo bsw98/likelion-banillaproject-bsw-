@@ -1,18 +1,18 @@
-let button = document.querySelector('.AdClose');
+let button = document.querySelector('.adClose');
 function handler(){
-  let AD = document.querySelector('.TopAd');
+  let AD = document.querySelector('.topAd');
   AD.style.display = 'none';
 }
 button.addEventListener('click',handler);
 
 let body = document.querySelector('body');
-let MenuButton = document.querySelector('.MenuButton');
-let MenuBar = document.querySelector('.MenuBar');
-let MenuButtonList = document.querySelectorAll('.MenuBar li a')
+let MenuButton = document.querySelector('.menuButton');
+let MenuBar = document.querySelector('.menuBar');
+let MenuButtonList = document.querySelectorAll('.menuBar li a')
 function ShowMenu(e){
       e = e.target;
 
-      if(e.parentNode == MenuBar || e.className == "MenuBarList"){
+      if(e.parentNode == MenuBar || e.className == "menuBarList"){
         
         MenuBar.style.top = '276px';
         MenuButtonList.forEach((item)=>{item.style.display = 'block'})

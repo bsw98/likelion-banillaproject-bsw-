@@ -31,6 +31,13 @@ button{
   background-color: inherit;
   cursor: pointer;
 }
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+    display:none;
+}
 /* 링크 스타일 */
 a {
   color: inherit;
@@ -41,7 +48,7 @@ a {
 body{
   font-family: 'Pretendard';
 }
-.a11y-hidden, fieldset {
+.a11y-hidden, legend {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -57,8 +64,22 @@ body{
  margin:0 auto;
  /* margin: 0 435px; */
 }
+
+.new::after{
+  content:'N';
+  position: relative;
+  margin-left:3px;
+  top:-20px;
+  color:#FA622F;
+  font-size: 7px;
+  font-weight: 900;
+}
 /* 탑 광고*/
-.TopAd{
+
+input:focus{
+  outline:none;
+}
+.topAd{
   
   display: flex;
   align-items: center;
@@ -69,7 +90,7 @@ body{
   height: 50px;
   
 }
-.TopAd a{
+.topAd a{
   
   text-align: center;
   width: 100%;
@@ -78,28 +99,28 @@ body{
 }
 
 
-.AdClose{
+.adClose{
   right:22%;
   position: absolute;
   z-index: 100;
- 
+ cursor: pointer;
  border: none;
  background-color: inherit;
 }
 /* 헤더 */
+
 .header{
   padding-top: 12px;
   font-family: 'Pretendard';
   font-size: 21.328px;
-  /* padding-top:68px; */
+
   position: relative;
   display: flex;
-  flex-flow: row;
   justify-content: space-between;
   height: 125px;
 }
 
-.MainBanner{
+.mainNavigation{
   padding:0;
   gap:12px;
   font-weight: 600;
@@ -110,13 +131,13 @@ body{
 /* .MainBanner li,input{
   transform : translate(0, -50%);
 } */
-.MainBanner li:first-child{
+.mainNavigation li:first-child{
   margin-top:38px;
 }
-.MainBanner li:nth-child(2){
+.mainNavigation li:nth-child(2){
   color: #5F0080;
 }
-.MainBanner li:nth-child(2)::after{
+.mainNavigation li:nth-child(2)::after{
   margin-left:12px;
   color: #D9D9D9;
   font-size:16px;
@@ -126,7 +147,7 @@ body{
   margin-top:45px;
 }
 .search{
-  margin-top:30px;
+  margin-top:20px;
   margin-left:50px;
   position: relative;
 }
@@ -145,41 +166,47 @@ padding-left: 20px;
  border: 2px solid #5F0080;
  border-radius: 5px;
 }
-.SearchButton{
+.search input:focus{
+  color:black;
+
+}
+.searchButton{
+  color: #5F0080;
   cursor: pointer;
   background-color: inherit;
-  top:18px;
+  top:24px;
   border: 0;
-  right:25px;
+  right:20px;
   position:absolute;
 }
-.RightBanner{
+.rightNavigation{
   
   gap:12px;
   display:flex;
 }
-.RightBanner a{
+.rightNavigation a{
   font-size: 24px;
   height: 24px;
 }
-.RightBanner a:hover{
-  color:#5F0080;
+
+.rightNavigation img{
+  fill: #5F0080;
 }
 
-.TopMenu{
-  padding-top: 12px;
+.topNavigation{
+  
   font-weight: 400;
   font-size: 12px;
   gap:6px;
-  top:-40px;
+  top:-28px;
   right:0;
   display: flex;
   position: absolute;
 }
-.TopMenu li:first-child{
+.topNavigation li:first-child{
   color: #5F0080;
 }
-.TopMenu :nth-child(2)::after,.TopMenu li:first-child::after{
+.topNavigation :nth-child(2)::after,.topNavigation li:first-child::after{
   color: 
   #D9D9D9;
   margin-left:6px;
@@ -199,11 +226,11 @@ display: flex;
 justify-content: space-between;
 font-size: 16px;
 }
-.MenuBar{
+.menuBar{
   position: relative;
   
 }
-.MenuButton{
+.menuButton{
   font-size: 16px;
   
   position: relative;
@@ -213,11 +240,11 @@ font-size: 16px;
   height: 70px;
  
 }
-.MenuButton:hover{
+.menuButton:hover{
   color:#5F0080;
 }
 
-.MenuBarList{
+.menuBarList{
   z-index: 1000;
   margin-right:-1000px;
   font-size: 16px;
@@ -228,24 +255,24 @@ font-size: 16px;
   width:247px;
  
 }
-.MenuBarList:hover{
+.menuBarList:hover{
   color:#5F0080;
   background-color: #cecccc;
 }
-.MenuOther{
+.menuOther{
   display: flex;
 }
-.MenuOther li{
+.menuOther li{
 
  
   display: block;
   width: 170px;
 }
-.MenuOther li a:hover{
+.menuOther li a:hover{
   color:#5F0080;
   text-decoration:underline
 }
-.Notice{
+.notice{
   color: #6B6B6B;
   border:1px #b3b3b3 solid;
   font-size: 12px;
@@ -253,6 +280,7 @@ font-size: 16px;
   padding: 0 8px 0 8px;
 }
 
+ 
 /* 메인 */
 .main{
   height: 1421px;
@@ -455,7 +483,14 @@ background-color: aquamarine;
 }
 
 /* 배너 */
+.swiper-wrapper{
+  margin-bottom:0;
+}
+.swiper-wrapper img{
+  width:100%;
+
+}
 .banner{
   background: linear-gradient(to bottom, #eee 0%, #fff 3%, #fff 100%);
- height: 370px;
+ 
 }
