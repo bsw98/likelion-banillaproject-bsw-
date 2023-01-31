@@ -456,6 +456,6 @@ background-color: aquamarine;
 
 /* 배너 */
 .banner{
-  background-color: #6B6B6B;
+  background: linear-gradient(to bottom, #eee 0%, #fff 3%, #fff 100%);
  height: 370px;
 }
