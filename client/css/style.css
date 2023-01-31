@@ -214,11 +214,14 @@ padding-left: 20px;
 }
 /* 네비게이션 */
 .navigation{
-
+  position: sticky;
+  top:0;
   font-weight: 600;
-font-size: 16px;
-line-height: 150%;
-color: #333333;
+  font-size: 16px;
+  line-height: 150%;
+  z-index: 1000;
+  background-color: white;
+  color: #333333;
   align-items: center;
   height: 72px;
 
@@ -254,6 +257,15 @@ font-size: 16px;
   display: none;
   width:247px;
  
+}
+.mininavigation{
+  font-size: 16px;
+  width:100%;
+  background-color: white;
+  z-index: 10000;
+  position: sticky;
+  top:0;
+  display:none;
 }
 .menuBarList:hover{
   color:#5F0080;

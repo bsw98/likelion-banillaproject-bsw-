@@ -31,7 +31,6 @@ body.addEventListener('mouseover',ShowMenu);
 
 // 스와이퍼
 
-
 const swiper = new Swiper('.swiper', {
   autoplay: true,
   loop: true, // 무한루프로 걸어서 맨 앞으로 후루룩 돌아오는 걸 방지
@@ -40,3 +39,22 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
   },
 })
+
+// 스크롤
+const navigation = document.querySelector('.navigation');
+const mini = document.querySelector('.mininavigation');
+
+
+
+function scrollHandeler(e){
+  if(window.scrollY >= 175){
+    
+    mini.style.display = 'flex';
+    navigation.style.display = 'none';
+  }else{
+    mini.style.display = 'none';
+    navigation.style.display = 'flex'
+  }
+}
+
+window.addEventListener('scroll',scrollHandeler)
