@@ -302,22 +302,113 @@ border-bottom: 2px black solid;
 .register-list li:first-child{
   margin-top:20px;
 }
-.register-list li,.register-list ul{
+.register-list li{
   font-weight: 600;
   font-size: 16px;
-  width: 540px;
-  margin-bottom: 60px;
+
+ 
   display: flex;
+  width: 640px;
+  margin-bottom: 40px;
+  /* height: 40px; */
 
 }
-.register-list li p,.register-list ul p{
+.register-list li p{
 
   text-align: left;
-  width:100px;
+  width:147.5px;
 }
 .register-list li button{
   color:#5F0080;
   border:1px #5F0080 solid;
+}
+/* 개인정보동의 */
+.use-agreement{
+  border-top: 2px black solid;
+  border-bottom: 1px gray solid;
+  display: flex;
+  flex-flow: row;
+  margin-bottom:0;
+}
+
+#use-agreement{
+  margin-bottom: 0;
+}
+.use-agreement p{
+  margin-top:28px;
+  width:130px;
+}
+.use-agreement-list input{
+    
+    margin-right:6px;
+}
+.use-agreement-list li{
+  margin-bottom: 25px;
+  width:480px;
+  height: 30px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.use-agreement-list li p{
+  font-weight: 400;
+  font-size: 16px;
+  margin-top:0;
+  width:360px;
+}
+.use-agreement-list li a{
+  margin-right: 40px;
+  color: #5F0080;
+  font-weight: 400;
+font-size: 12.003px;
+}
+.use-agreement-list li:first-child span{
+  font-weight: 400;
+  font-size: 12.003px;
+  color: #898989;
+ 
+  position: absolute;
+  top:24px;
+  left:0;
+}
+
+.use-agreement-list li:first-child{
+  margin-top:20px;
+}
+.use-agreement-list li:first-child p{
+  position: relative;
+  width:480px;
+  font-weight: 600;
+font-size: 21.328px;
+}
+.register-button{
+  
+  margin: 0 auto;
+  margin-top:40px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  width:340px;
+  height: 54px;
+  border-radius: 4px;
+  font-weight: 600;
+  color:#ffffff;
+  background-color: #5F0080;
+  border:#5F0080
+}
+
+.important::after{
+  content:'*';
+  position: relative;
+  margin-left:3px;
+  top:-10px;
+  color:#FA622F;
+  font-size: 12px;
+  font-weight: 900;
 }
 /* 푸터 */
 .footer {
