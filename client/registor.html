@@ -116,7 +116,16 @@
       <legend>
       회원가입
       </legend>
-      <h2 class="register-header">회원가입</h2>
+      
+        <div class="register-header">
+
+          <h2 >회원가입</h2>
+          <p class="register-tip">필수입력사항</p>
+        </div>
+      
+        
+      </h2>
+      
       <ul class="register-list">
         <li>
             <p class="important">아이디</p> <input class="button-size" type="text" placeholder="아이디를 입력해주세요" required> <button class="side-button-size">중복확인</button>
@@ -136,24 +145,42 @@
         <li>
           <p class="important">휴대폰</p> <input class="button-size" type="tel" placeholder="숫자만 입력해주세요." required> <button class="side-button-size">인증</button>
         </li>
-        <li>
-          <p class="important">주소</p> <button class="button-size">주소 검색</button> 
-          <!-- <span>배송지에 따라 상품 정보가 달라질 수 있습니다.</span> -->
+        <li class="adress-list">
+          <p class="important">주소</p> 
+          
+          <button class="button-size">주소 검색</button> 
+          <span>배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
         </li>
         <li>
-          <p>성별</p> <input type="radio" name="gender" />남자
-                      <input type="radio" name="gender" />여자
-                      <input type="radio" name="gender" />선택안함
+          <p>성별</p>
+                <div class="gender-wrapper">
+                  <label for="gender-man">
+                      <input type="radio" name="gender" value="male" />남자
+                  </label>
+                  <label for="gender-woman">
+                      <input type="radio" name="gender" value="female"/>여자
+                  </label>
+                  <label for="gender-none">
+                      <input type="radio" name="gender" value="#" />선택안함
+                  </label>
+                </div>
         </li>
         <li>
           <p>생년월일</p> <input type="date" class="button-size">
         </li>
         <li>
-          <p>추가입력 사항</p> <input type="radio"  />친구초대 추천인 아이디
-                              <input type="radio"  />참여 이벤트명
+          <p>추가입력 사항</p> 
+          <div class="plus-wrapper">
+            <label for="">
+              <input type="radio"  />친구초대 추천인 아이디
+            </label>           
+            <label for="">  
+              <input type="radio"  />참여 이벤트명
+            </label>
+        </div>
         </li>
         <li class="use-agreement" id="use-agreement">
-          <p class="important">이용약관동의</p>
+          <p class="important" id="use-agreement-header">이용약관동의</p>
           <ul class="use-agreement-list">
             <li>
               <input type="checkbox" />
