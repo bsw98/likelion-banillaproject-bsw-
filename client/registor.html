@@ -154,14 +154,18 @@
         <li>
           <p>성별</p>
                 <div class="gender-wrapper">
+                  <input type="radio" name="gender" value="male" class="check2" id="gender-man"/>
                   <label for="gender-man">
-                      <input type="radio" name="gender" value="male" />남자
+                    <em></em>남자
                   </label>
+                  
+                  <input type="radio" name="gender" value="female" class="check2" id="gender-woman" />
                   <label for="gender-woman">
-                      <input type="radio" name="gender" value="female"/>여자
+                      <em></em>여자
                   </label>
+                  <input type="radio" name="gender" value="#" class="check2" id="gender-none" />
                   <label for="gender-none">
-                      <input type="radio" name="gender" value="#" />선택안함
+                      <em></em>선택안함
                   </label>
                 </div>
         </li>
@@ -171,11 +175,14 @@
         <li>
           <p>추가입력 사항</p> 
           <div class="plus-wrapper">
-            <label for="">
-              <input type="checkbox"  />친구초대 추천인 아이디
+            <input type="checkbox" class="check2" id="ch7"/>
+            <label for="ch7">
+              
+              <em class="check2"></em> 친구초대 추천인 아이디
             </label>           
-            <label for="">  
-              <input type="checkbox"  />참여 이벤트명
+            <input type="checkbox" class="check2" id="ch6"/>
+            <label for="ch6">  
+              <em class="check2" ></em> 참여 이벤트명
             </label>
         </div>
         </li>
@@ -183,7 +190,8 @@
           <p class="important" id="use-agreement-header">이용약관동의</p>
           <ul class="use-agreement-list">
             <li>
-              <input type="checkbox" class="all-check"/>
+              <input type="checkbox" id='ch1' class="all-check"/>
+              <label for="ch1"><em></em></label>
               <p>전체 동의합니다.
                 <span class="all-agree-side">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</span>
 
@@ -191,7 +199,8 @@
               </p>
             </li>
             <li>
-              <input type="checkbox" class="sub-check"/>
+              <input type="checkbox" id='ch2' class="sub-check"/>
+              <label for="ch2"><em></em></label>
               <p>이용약관 동의(필수)</p>
               <a href="#">약관보기 ></a>
 
@@ -199,21 +208,24 @@
       
        
             <li>
-              <input type="checkbox" class="sub-check"/>
+              <input type="checkbox" id='ch3' class="sub-check"/>
+              <label for="ch3"><em></em></label>
               <p>개인정보 수집 이용 동의(필수)</p>
               <a href="#">약관보기 ></a>
             </li>
          
     
             <li>
-              <input type="checkbox" class="sub-check" />
+              <input type="checkbox" id='ch4' class="sub-check" />
+              <label for="ch4"><em></em></label>
               <p>무료배송,할인쿠폰 등 혜택/정보 수신 동의(선택)</p>
               <a href="#">약관보기 ></a>
             </li>
 
       
             <li>
-              <input type="checkbox" class="sub-check"/>
+              <input type="checkbox" id='ch5' class="sub-check"/>
+              <label for="ch5"><em></em></label>
               <p>본인은 만 14세 이상입니다.(필수)</p>
               <a href="#">약관보기 ></a>
             </li>
