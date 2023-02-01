@@ -41,12 +41,16 @@ const swiper = new Swiper('.swiper', {
 })
 
 // 스크롤
+
+
 const navigation = document.querySelector('.navigation');
 const mini = document.querySelector('.mininavigation');
 
 
 
 function scrollHandeler(e){
+
+  
   if(window.scrollY >= 175){
     
     mini.style.display = 'flex';
@@ -58,3 +62,4 @@ function scrollHandeler(e){
 }
 
 window.addEventListener('scroll',scrollHandeler)
+

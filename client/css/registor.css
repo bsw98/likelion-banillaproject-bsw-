@@ -48,6 +48,9 @@ a {
 body{
   font-family: 'Pretendard';
 }
+input:focus{
+  color:black;
+}
 .a11y-hidden, legend {
   position: absolute;
   width: 1px;
@@ -62,6 +65,8 @@ body{
  text-align: center;
  width: 1050px;
  margin:0 auto;
+
+
  /* margin: 0 435px; */
 }
 
@@ -203,9 +208,6 @@ padding-left: 20px;
   display: flex;
   position: absolute;
 }
-.is-active{
-  display:none;
-}
 .topNavigation li:first-child{
   color: #5F0080;
 }
@@ -217,14 +219,11 @@ padding-left: 20px;
 }
 /* 네비게이션 */
 .navigation{
-  position: sticky;
-  top:0;
+
   font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
-  z-index: 1000;
-  background-color: white;
-  color: #333333;
+font-size: 16px;
+line-height: 150%;
+color: #333333;
   align-items: center;
   height: 72px;
 
@@ -261,23 +260,6 @@ font-size: 16px;
   width:247px;
  
 }
-.mininavigation{
-
-  font-size: 16px;
-  width:100%;
-  background-color: white;
-  z-index: 10000;
-  position: sticky;
-  top:0;
-  display:none;
-}
-.minimenuOther{
-  display: flex;
-}
-.minimenuOther li{
-  
-  width: 120px;
-}
 .menuBarList:hover{
   color:#5F0080;
   background-color: #cecccc;
@@ -303,13 +285,40 @@ font-size: 16px;
   padding: 0 8px 0 8px;
 }
 
- 
 /* 메인 */
-.main{
-  height: 1421px;
-background-color: aquamarine;
-}
 
+.main{
+
+  background: linear-gradient(to bottom, #eee 0%, #fff 3%, #fff 100%);
+  width: 100%;
+  padding-top:80px;
+}
+.register-header{
+  font-weight: 600;
+font-size: 21.328px;
+padding-bottom: 50px;
+border-bottom: 2px black solid;
+}
+.register-list li:first-child{
+  margin-top:20px;
+}
+.register-list li,.register-list ul{
+  font-weight: 600;
+  font-size: 16px;
+  width: 540px;
+  margin-bottom: 60px;
+  display: flex;
+
+}
+.register-list li p,.register-list ul p{
+
+  text-align: left;
+  width:100px;
+}
+.register-list li button{
+  color:#5F0080;
+  border:1px #5F0080 solid;
+}
 /* 푸터 */
 .footer {
   padding-top: 30px;
@@ -506,14 +515,7 @@ background-color: aquamarine;
 }
 
 /* 배너 */
-.swiper-wrapper{
-  margin-bottom:0;
-}
-.swiper-wrapper img{
-  width:100%;
-
-}
 .banner{
-  background: linear-gradient(to bottom, #eee 0%, #fff 3%, #fff 100%);
- 
+  background-color: #6B6B6B;
+ height: 370px;
 }
