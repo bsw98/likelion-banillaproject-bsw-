@@ -314,9 +314,14 @@ border-bottom: 2px black solid;
 
 }
 .register-list li p{
-
+  display: flex;
+  align-items: center;
+  
   text-align: left;
   width:147.5px;
+}
+.register-list li input{
+  padding-left: 20px;
 }
 .register-list li button{
   color:#5F0080;
@@ -353,6 +358,7 @@ border-bottom: 2px black solid;
   
 }
 .use-agreement-list li p{
+  
   font-weight: 400;
   font-size: 16px;
   margin-top:0;
@@ -378,10 +384,28 @@ font-size: 12.003px;
   margin-top:20px;
 }
 .use-agreement-list li:first-child p{
+  
   position: relative;
   width:480px;
   font-weight: 600;
 font-size: 21.328px;
+}
+.side-button-size{
+  
+  font-weight: 600;
+  border-radius: 4px;
+  width: 143px;
+  margin-left:10px;
+}
+.button-size {
+  border:1px gray solid;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  width: 333px;
+height: 44px;
 }
 .register-button{
   
