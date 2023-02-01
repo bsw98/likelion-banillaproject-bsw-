@@ -338,7 +338,8 @@ border-bottom: 2px black solid;
 }
 .register-list li button{
   color:#5F0080;
-  border:1px #5F0080 solid;
+  font-weight: 600;
+  border:2px #5F0080 solid;
 }
 .side-button-size{
   
@@ -373,6 +374,50 @@ height: 44px;
   color:#ffffff;
   background-color: #5F0080;
   border:#5F0080
+}
+
+.important::after{
+  content:'*';
+  position: relative;
+  margin-left:3px;
+  top:-10px;
+  color:#FA622F;
+  font-size: 12px;
+  font-weight: 900;
+}
+.adress-list{
+ position: relative;
+}
+.adress-list span{
+ position: absolute;
+ bottom:-20px;
+ left: 147px;
+ font-weight: 400;
+font-size: 12.003px;
+}
+.register-tip::before{
+  content:'*';
+  position: relative;
+  top:-2px;
+  color:#FA622F;
+  font-size: 12px;
+  font-weight: 900;
+}
+.gender-wrapper{
+  
+  
+  width:333px;
+  display: flex;
+  justify-content: space-between;
+}
+.gender-wrapper label input,.plus-wrapper label input{
+  margin-right:8px;
+
+}
+.plus-wrapper{
+  width:333px;
+  display: flex;
+  justify-content: space-between;
 }
 /* 개인정보동의 */
 .use-agreement{
@@ -438,51 +483,7 @@ font-size: 12.003px;
   position: relative;
   width:480px;
   font-weight: 600;
-font-size: 21.328px;
-}
-
-.important::after{
-  content:'*';
-  position: relative;
-  margin-left:3px;
-  top:-10px;
-  color:#FA622F;
-  font-size: 12px;
-  font-weight: 900;
-}
-.adress-list{
- position: relative;
-}
-.adress-list span{
- position: absolute;
- bottom:-20px;
- left: 147px;
- font-weight: 400;
-font-size: 12.003px;
-}
-.gender-wrapper{
-  
-  
-  width:333px;
-  display: flex;
-  justify-content: space-between;
-}
-.gender-wrapper label input,.plus-wrapper label input{
-  margin-right:8px;
-
-}
-.plus-wrapper{
-  width:333px;
-  display: flex;
-  justify-content: space-between;
-}
-.register-tip::before{
-  content:'*';
-  position: relative;
-  top:-2px;
-  color:#FA622F;
-  font-size: 12px;
-  font-weight: 900;
+  font-size: 21.328px;
 }
 /* 푸터 */
 .footer {

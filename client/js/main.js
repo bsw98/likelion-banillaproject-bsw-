@@ -43,23 +43,57 @@ const swiper = new Swiper('.swiper', {
 // 스크롤
 
 
-const navigation = document.querySelector('.navigation');
-const mini = document.querySelector('.mininavigation');
+// const navigation = document.querySelector('.navigation');
+// const mini = document.querySelector('.mininavigation');
 
 
 
-function scrollHandeler(e){
+// function scrollHandeler(e){
 
   
-  if(window.scrollY >= 175){
+//   if(window.scrollY >= 175){
     
-    mini.style.display = 'flex';
-    navigation.style.display = 'none';
-  }else{
-    mini.style.display = 'none';
-    navigation.style.display = 'flex'
+//     mini.style.display = 'flex';
+//     navigation.style.display = 'none';
+//   }else{
+//     mini.style.display = 'none';
+//     navigation.style.display = 'flex'
+//   }
+// }
+
+// window.addEventListener('scroll',scrollHandeler)
+// 전체 체크 전체 체크 해제
+
+let allCheck = document.querySelector('.all-check');
+let subCheck = document.querySelectorAll('.sub-check');
+
+function checkhandler(){
+  
+  if(allCheck.checked){
+    subCheck.forEach((item)=>{
+          item.checked = true;
+    }) 
+  } else{
+    subCheck.forEach((item)=>{
+      item.checked = false;})
   }
 }
 
-window.addEventListener('scroll',scrollHandeler)
+allCheck.addEventListener('click',checkhandler)
 
+
+
+// 로그인
+
+
+const LoginButton = document.querySelector('.LoginButton');
+const LoginId = document.querySelector('.id-input');
+const LoginPw = document.querySelector('.pw-input');
+
+function loginEvent(){
+  let id = LoginId.value;
+  let pw = LoginPw.value;
+  (id=='admin'&&pw=='admin')?alert('로그인성공'):alert('로그인실패')
+}
+
+LoginButton.addEventListener('click',loginEvent)
