@@ -34,3 +34,16 @@ function menuhandler(e){
 
 
 menuNavigation.addEventListener('click',menuhandler);
+
+
+// 체크 초기화
+
+const initializationButton = document.querySelector('.initialization');
+const checkbutton = document.querySelectorAll('.check2')
+
+let han = ()=>{     
+  checkbutton.forEach((item)=>{item.checked=false})
+}
+
+initializationButton.addEventListener('click',han
+)
