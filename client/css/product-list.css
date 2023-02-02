@@ -1,0 +1,507 @@
+@import url(./reset.css);
+@import url(./normalize.css);
+@import url(./fontello.css);
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+
+
+/* 기본 스타일 */
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+html {
+  
+  font-size: 10px;
+}
+input:focus{
+  outline:none;
+}
+.maincolor{
+  color: #5F0080;
+}
+button{
+  border:0;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+    display:none;
+}
+/* 링크 스타일 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 공통 */
+body{
+  font-family: 'Pretendard';
+}
+input:focus{
+  color:black;
+}
+.a11y-hidden, legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+.center{
+  display: flex;
+ justify-content: center;
+ text-align: center;
+ width: 1050px;
+ margin:0 auto;
+
+
+ /* margin: 0 435px; */
+}
+
+.new::after{
+  content:'N';
+  position: relative;
+  margin-left:3px;
+  top:-20px;
+  color:#FA622F;
+  font-size: 7px;
+  font-weight: 900;
+}
+/* 탑 광고*/
+
+input:focus{
+  outline:none;
+}
+.topAd{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+ 
+  background-color: #5F0080;
+  height: 50px;
+  
+}
+.topAd a{
+  
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+
+.adClose{
+  right:22%;
+  position: absolute;
+  z-index: 100;
+ cursor: pointer;
+ border: none;
+ background-color: inherit;
+}
+/* 헤더 */
+
+.header{
+  padding-top: 12px;
+  font-family: 'Pretendard';
+  font-size: 21.328px;
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 125px;
+}
+
+.mainNavigation{
+  padding:0;
+  gap:12px;
+  font-weight: 600;
+  display: flex;
+  color: #898989;
+}
+
+/* .MainBanner li,input{
+  transform : translate(0, -50%);
+} */
+.mainNavigation li:first-child{
+  margin-top:38px;
+}
+.mainNavigation li:nth-child(2){
+  color: #5F0080;
+}
+.mainNavigation li:nth-child(2)::after{
+  margin-left:12px;
+  color: #D9D9D9;
+  font-size:16px;
+  content:"ㅣ"
+}
+.header li{
+  margin-top:45px;
+}
+.search{
+  margin-top:20px;
+  margin-left:50px;
+  position: relative;
+}
+.search input{
+ font-family: 'Pretendard';
+font-style: normal;
+font-weight: 400;
+font-size: 21.328px;
+line-height: 160%;
+padding-left: 20px;
+  color: #898989;;
+
+
+  width:400px;
+  height: 60px;
+ border: 2px solid #5F0080;
+ border-radius: 5px;
+}
+.search input:focus{
+  color:black;
+
+}
+.searchButton{
+  color: #5F0080;
+  cursor: pointer;
+  background-color: inherit;
+  top:24px;
+  border: 0;
+  right:20px;
+  position:absolute;
+}
+.rightNavigation{
+  
+  gap:12px;
+  display:flex;
+}
+.rightNavigation a{
+  font-size: 24px;
+  height: 24px;
+}
+
+.rightNavigation img{
+  fill: #5F0080;
+}
+
+.topNavigation{
+  
+  font-weight: 400;
+  font-size: 12px;
+  gap:6px;
+  top:-28px;
+  right:0;
+  display: flex;
+  position: absolute;
+}
+.topNavigation li:first-child{
+  color: #5F0080;
+}
+.topNavigation :nth-child(2)::after,.topNavigation li:first-child::after{
+  color: 
+  #D9D9D9;
+  margin-left:6px;
+  content:'ㅣ'
+}
+/* 네비게이션 */
+.navigation{
+
+  font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+color: #333333;
+  align-items: center;
+  height: 72px;
+
+display: flex;
+justify-content: space-between;
+font-size: 16px;
+}
+.menuBar{
+  position: relative;
+  
+}
+.menuButton{
+  font-size: 16px;
+  
+  position: relative;
+  margin:0;
+  width:100px;
+  
+  height: 70px;
+ 
+}
+.menuButton:hover{
+  color:#5F0080;
+}
+
+.menuBarList{
+  z-index: 1000;
+  margin-right:-1000px;
+  font-size: 16px;
+  position: relative;
+  color:#333333;
+  background-color: white;
+  display: none;
+  width:247px;
+ 
+}
+.menuBarList:hover{
+  color:#5F0080;
+  background-color: #cecccc;
+}
+.menuOther{
+  display: flex;
+}
+.menuOther li{
+
+ 
+  display: block;
+  width: 170px;
+}
+.menuOther li a:hover{
+  color:#5F0080;
+  text-decoration:underline
+}
+.notice{
+  color: #6B6B6B;
+  border:1px #b3b3b3 solid;
+  font-size: 12px;
+  border-radius: 50px;
+  padding: 0 8px 0 8px;
+}
+
+/* 메인 */
+/* · */
+.main{
+ 
+  background: linear-gradient(to bottom, #eee 0%, #fff 1%, #fff 100%);
+  width: 100%;
+  padding-top:80px;
+  display:flex;
+}
+.menu-navigation{
+  background-color:#b3b3b3;
+  width: 220px;
+  height: 2880px;
+  margin-right:47px
+}
+.best-item{
+  background-color: #FA622F;
+  width:783px;
+  height: 2880px;
+}
+/* 푸터 */
+.footer {
+  padding-top: 30px;
+  border-top: 1px solid rgb(247,247,247);
+  height:auto;
+  text-align: left;
+}
+
+.footerMain {
+  width : 1050px;
+  margin : 0 auto;
+}
+
+.footerInner {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.footerRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerHeader {
+  padding-bottom: 17px;
+  font-weight: 500px;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.footerCall {
+  display: block;
+  padding-bottom: 20px;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.footerDay {
+  margin-left: 8px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.footerAsk {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 버튼 공통 스타일 */
+.askButton {
+  display: block;
+  width: 140px;
+  height: 40px;
+  border: 1px solid rgb(236,236,236);
+  border-radius: 3px;
+  line-height: 39px;
+  text-align: center;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+/* 디바이더 공통 스타일 */
+.divider{
+  margin: 0px 6px;
+}
+
+/* 설명 공통 스타일 */
+.describe {
+  margin-top: 2px;
+  color: rgb(153,153,153);
+  letter-spacing: -0.5px;
+  line-height: 16.8px;
+}
+
+.footerKakao {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerOne {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerBig {
+  display: flex;
+  flex-direction: row;
+}
+
+.notMember {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(153,153,153);
+}
+
+.footerList {
+  display: flex;
+  width: 100%;
+  padding-bottom: 29px;
+  font-size: 14px;
+}
+
+.liList {
+  margin-left: 14px;
+}
+.innerList1 {
+  margin-left: 0px;
+}
+
+
+.innerList5 {
+  font-weight: 500;
+}
+
+.footerConfirm {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(153,153,153);
+  margin-bottom: 40px;
+}
+
+.confirm {
+  padding-left: 4px;
+}
+
+.aConfirm {
+  margin-left: 3px;
+  color: rgb(95,0,128);
+}
+
+.footerImageLink {
+  display: flex;
+}
+
+.aImageLink img{
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.footerBottom{
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0px 33px;
+  border-top: 1px solid rgb(238,238,238);
+}
+
+.footerBottom button {
+  overflow: visible;
+  background-color: transparent;
+  border: none;
+}
+
+.footerBottomButton {
+  display: flex;
+  text-align: left;
+}
+
+.footerBottomButton img {
+  width: 34px;
+  margin-right: 10px;
+}
+
+.tossButton img{
+  width: 102px;
+  margin-right: 10px;
+}
+
+.footerButtonText {
+  font-size: 10px;
+  line-height: 14.5px;
+  color: rgb(153,153,153);
+  word-break: break-word;
+}
+
+.copyright {
+  padding: 20px 0px 30px;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  background-color: rgb(247,247,247);
+  color: rgb(153, 153, 153);
+}
+
+.copyrightEm {
+  display: block;
+  padding-top: 7px;
+  font-style: normal;
+}
+
+/* 배너 */
+.banner{
+  background-color: #6B6B6B;
+ height: 370px;
+}
