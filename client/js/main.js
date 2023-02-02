@@ -64,36 +64,84 @@ const swiper = new Swiper('.swiper', {
 // window.addEventListener('scroll',scrollHandeler)
 // 전체 체크 전체 체크 해제
 
-let allCheck = document.querySelector('.all-check');
-let subCheck = document.querySelectorAll('.sub-check');
+// let allCheck = document.querySelector('.all-check');
+// let subCheck = document.querySelectorAll('.sub-check');
 
-function checkhandler(){
+// function checkhandler(){
   
-  if(allCheck.checked){
-    subCheck.forEach((item)=>{
-          item.checked = true;
-    }) 
-  } else{
-    subCheck.forEach((item)=>{
-      item.checked = false;})
-  }
-}
+//   if(allCheck.checked){
+//     subCheck.forEach((item)=>{
+//           item.checked = true;
+//     }) 
+//   } else{
+//     subCheck.forEach((item)=>{
+//       item.checked = false;})
+//   }
+// }
 
-allCheck.addEventListener('click',checkhandler)
+// allCheck.addEventListener('click',checkhandler)
 
 
 
 // 로그인
 
 
-const LoginButton = document.querySelector('.LoginButton');
-const LoginId = document.querySelector('.id-input');
-const LoginPw = document.querySelector('.pw-input');
+// const LoginButton = document.querySelector('.LoginButton');
+// const LoginId = document.querySelector('.id-input');
+// const LoginPw = document.querySelector('.pw-input');
 
-function loginEvent(){
-  let id = LoginId.value;
-  let pw = LoginPw.value;
-  (id=='admin'&&pw=='admin')?alert('로그인성공'):alert('로그인실패')
+// function loginEvent(){
+//   let id = LoginId.value;
+//   let pw = LoginPw.value;
+//   (id=='admin'&&pw=='admin')?alert('로그인성공'):alert('로그인실패')
+// }
+
+// LoginButton.addEventListener('click',loginEvent)
+
+// 상품리스트
+const menuNavigation = document.querySelector('.menu-navigation');
+const menuList = document.querySelectorAll('.menu-main-name');
+const subList = document.querySelectorAll('.menu-sub-list');
+
+
+function menuhandler(e){
+    e = e.target;
+    if(e==menuList[1]){
+      
+      subList[0].classList.toggle('is-active-hidden')
+    }
+    if(e==menuList[2]){
+      
+      subList[1].classList.toggle('is-active-hidden')
+    }
+    if(e==menuList[3]){
+    
+      subList[2].classList.toggle('is-active-hidden')
+    }
+    if(e==menuList[4]){
+     
+      subList[3].classList.toggle('is-active-hidden')
+    }
+    if(e==menuList[5]){
+      
+      subList[4].classList.toggle('is-active-hidden')
+    }
+    if(e==menuList[6]){
+      
+      subList[5].classList.toggle('is-active-hidden')
+    }
+    
 }
 
-LoginButton.addEventListener('click',loginEvent)
+
+menuNavigation.addEventListener('click',menuhandler);
+
+
+
+
+
+
+
+
+
+
