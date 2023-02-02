@@ -1,0 +1,63 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --secondary: #BD76FF;
+  --primary: #5F0080;
+  --content: #333333;
+ 
+  --gray50 : #F9F9F9;
+  --gray100 : #E1E1E1;
+  --gray200 : #C4C4C4;
+  --gray300 : #A6A6A6;
+  --gray400 : #898989;
+  --gray500 : #6B6B6B;
+  --gray600 : #565656;
+  --gray700 : #404040;
+  --gray800 : #2B2B2B;
+  --gray900 : #151515;
+
+  --accent : #FA622F;
+
+  --blue100 : #CCE0FF;
+  --blue200 : #99C2FF;
+  --blue300 : #66A3FF;
+  --blue400 : #3385FF;
+  --blue500 : #0066FF;
+  --blue600 : #0052CC;
+  --blue700 : #003D99;
+  --blue800 : #002966;
+  --blue900 : #001433;
+
+  --info : #F03F40;
+
+  --primary-color: var(--primary);
+  --secondary-color: var(--secondary);
+  --white-color: var(--white);
+  --black-color: var(--black);
+  --content-color: var(--content);
+
+  --gray100-color: var(--gray100);
+  --gray200-color: var(--gray200);
+  --gray300-color: var(--gray300);
+  --gray400-color: var(--gray400);
+  --gray500-color: var(--gray500);
+  --gray600-color: var(--gray600);
+  --gray700-color: var(--gray700);
+  --gray800-color: var(--gray800);
+  --gray900-color: var(--gray900);
+
+  --accent-color: var(--accent);
+
+  --blue100-color: var(--blue100);
+  --blue200-color: var(--blue200);
+  --blue300-color: var(--blue300);
+  --blue400-color: var(--blue400);
+  --blue500-color: var(--blue500);
+  --blue600-color: var(--blue600);
+  --blue700-color: var(--blue700);
+  --blue800-color: var(--blue800);
+  --blue900-color: var(--blue900);
+
+  --info-color: var(--info);
+
+}

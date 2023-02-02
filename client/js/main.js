@@ -64,39 +64,39 @@ const swiper = new Swiper('.swiper', {
 // window.addEventListener('scroll',scrollHandeler)
 // 전체 체크 전체 체크 해제
 
-// let allCheck = document.querySelector('.all-check');
-// let subCheck = document.querySelectorAll('.sub-check');
+let allCheck = document.querySelector('.all-check');
+let subCheck = document.querySelectorAll('.sub-check');
 
-// function checkhandler(){
+function checkhandler(){
   
-//   if(allCheck.checked){
-//     subCheck.forEach((item)=>{
-//           item.checked = true;
-//     }) 
-//   } else{
-//     subCheck.forEach((item)=>{
-//       item.checked = false;})
-//   }
-// }
+  if(allCheck.checked){
+    subCheck.forEach((item)=>{
+          item.checked = true;
+    }) 
+  } else{
+    subCheck.forEach((item)=>{
+      item.checked = false;})
+  }
+}
 
-// allCheck.addEventListener('click',checkhandler)
+allCheck.addEventListener('click',checkhandler)
 
 
 
 // 로그인
 
 
-// const LoginButton = document.querySelector('.LoginButton');
-// const LoginId = document.querySelector('.id-input');
-// const LoginPw = document.querySelector('.pw-input');
+const LoginButton = document.querySelector('.LoginButton');
+const LoginId = document.querySelector('.id-input');
+const LoginPw = document.querySelector('.pw-input');
 
-// function loginEvent(){
-//   let id = LoginId.value;
-//   let pw = LoginPw.value;
-//   (id=='admin'&&pw=='admin')?alert('로그인성공'):alert('로그인실패')
-// }
+function loginEvent(){
+  let id = LoginId.value;
+  let pw = LoginPw.value;
+  (id=='admin'&&pw=='admin')?alert('로그인성공'):alert('로그인실패')
+}
 
-// LoginButton.addEventListener('click',loginEvent)
+LoginButton.addEventListener('click',loginEvent)
 
 // 상품리스트
 const menuNavigation = document.querySelector('.menu-navigation');

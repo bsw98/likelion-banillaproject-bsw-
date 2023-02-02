@@ -1,6 +1,7 @@
 @import url(./reset.css);
 @import url(./normalize.css);
 @import url(./fontello.css);
+@import url(./color.css);
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
 
@@ -317,7 +318,7 @@ margin-bottom:48px;
   margin-right:47px
 }
 .best-item{
-  background-color: #FA622F;
+  
   width:783px;
   
 }
@@ -389,6 +390,198 @@ input[class="check2"] + label em{
 input[class="check2"]:checked + label em{
   background:url(../assets/icons/input_icon/isChecked=true.svg) 0 0 no-repeat;
 }
+
+
+
+.best-item{
+  width:783px;
+  
+  position: relative;
+  
+  }
+  
+  .best-page-name{
+  height: 128px;
+  font-weight: 600;
+  font-size: 21.328px;
+  line-height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  }
+  
+  .best-page-main{
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  
+  
+  .bset-item-sum{
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  
+  .recommend-list{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .best-main-item-list{
+  width: 783px;
+  height: 2880px;
+  
+  }
+  
+  .recommend-list-name{
+    color: var(--gray300);
+  }
+  
+  .recommend-list-name:first-child{
+    color: var(--black);
+  }
+  
+  .recommend-icon{
+    width: 12.6px;
+    height: 12.6px;
+  }
+  
+  .best-confirm{
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  
+  .best-page-productlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 0;
+    margin-top: 0px;
+    height: 538px;
+    width: 249px;
+  }
+  .best-page-productlist-item {
+    margin-right: 18px;
+  }
+  
+  .best-page-product-thumbnail {
+    position: relative;
+    width: 249px;
+    height: 320px;
+  }
+  .best-page-product-thumbnail img {
+    width: 249px;
+  }
+  
+  .best-page-cartButton {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    background-image: url(../assets/icons/Icon/Cart.svg);
+    border: none;
+    right: 20px;
+    bottom: 17px;
+  }
+  .best-page-cartButton img {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .best-page-product-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 16px;
+    gap: 8px;
+  }
+  
+  .best-page-product-info h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    margin-top: 16px;
+  }
+  
+  .best-page-delivery-type{
+  color: var(--gray400);
+  font-weight: 600;
+  font-size: 12.003px;
+  }
+  
+  .best-page-selling-price{
+  font-weight: 600;
+  font-size: 21.328px;
+  }
+  
+  .best-page-item-explain{
+  font-weight: 400;
+  font-size: 12.003px;
+  line-height: 160%;
+  color: var(--gray400);
+  }
+  
+  
+  .best-page-tag{
+    background: var(--gray100);
+    font-weight: 600;
+    font-size: 12.003px;
+    line-height: 150%;
+    border-radius: 4px;
+    padding: 4px;
+  }
+  
+  .best-page-tag:first-child{
+    color: var(--primary);
+  }
+  .best-page-selling {
+    font-weight: 600;
+    font-size: 21.328px;
+  }
+  
+  .best-page-sale {
+    color: #fa622f;
+  }
+  
+  .best-page-price {
+    font-weight: 400;
+    font-size: 12.003px;
+    line-height: 160%;
+    color: var(--gray300);
+    margin-top: 8px;
+    text-decoration: line-through;
+  }
+  
+  .page-button{
+    width: 232px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 275.5px;
+    bottom: 80px; 
+    
+  }
+  
+  .page-move{
+    border: 1px solid var(--gray100);
+    width: 34px;
+    height: 34px;
+    font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  
+  }
+  
+  
 /* 푸터 */
 .footer {
   padding-top: 30px;
