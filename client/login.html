@@ -12,7 +12,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
-  <script src="./js/main.js" type="module"></script>
+  <script src="./js/login.js" type="module"></script>
   <link rel="stylesheet" href="./css/fontello.css" />
   
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
@@ -112,17 +112,18 @@
 
   
   <fieldset>
-    <legend>로그인</legend>
-    <form method="post" action="#" class="login">
+    <!-- <form method="post" action="" class="login"> -->
+      <form class="login">
+      <legend>로그인</legend>
+
       <p>로그인</p>
-      <input type="email" placeholder="아이디를 입력해주세요" class="id-input LoginInput LoginButtonSize" required>
+      <input type="text" placeholder="아이디를 입력해주세요" class="id-input LoginInput LoginButtonSize" required>
       <input type="password" placeholder="비밀번호를 입력해주세요" class="pw-input LoginInput LoginButtonSize" required>
       <ul class="FindIQ">
         <li><a href="#">비밀번호 찾기</a></li>
         <li><a href="#">아이디 찾기</a></li>
       </ul>
-
-      
+   
       <button type="submit" class="LoginButton LoginButtonSize">로그인</button>
       <a href="#" class="MembershipButton LoginButtonSize">회원가입</a>
     </form> 

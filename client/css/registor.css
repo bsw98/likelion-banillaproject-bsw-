@@ -286,6 +286,15 @@ font-size: 16px;
 }
 
 /* 메인 */
+button:disabled{
+  cursor: not-allowed;
+  background: #111 !important;
+  color: #a8aab8;
+  transition: all 400ms;
+}
+button{
+  transition: all 400ms;
+}
 .register-tip{
   bottom: 0;
   right:0;

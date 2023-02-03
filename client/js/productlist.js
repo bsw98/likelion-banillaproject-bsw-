@@ -45,5 +45,4 @@ let han = ()=>{
   checkbutton.forEach((item)=>{item.checked=false})
 }
 
-initializationButton.addEventListener('click',han
-)
+initializationButton.addEventListener('click',han)
