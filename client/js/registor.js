@@ -39,7 +39,7 @@ let resgisterButton =document.querySelector('.register-button');
 
 function keycheck(e){
   e = e.target
-
+  
   if (pw.value.length >= 8&&email.value.includes('@') && email.value.includes('.') )
   { 
     // disable 쓰지마세요
@@ -68,6 +68,7 @@ function regit(){
   localStorage.setItem("pw", pw.value);
   localStorage.setItem("email", email.value);
   alert('가입완료!')
+  location.href='./index.html'
   
 }
 

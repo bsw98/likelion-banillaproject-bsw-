@@ -337,6 +337,9 @@ font-size: 16px;
 
  content:"ㅣ";
 }
+.logout-button{
+  display:none
+}
 /* 푸터 */
 .footer {
   padding-top: 30px;

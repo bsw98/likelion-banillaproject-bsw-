@@ -5,11 +5,23 @@ function handler(){
 }
 button.addEventListener('click',handler);
 //로그인 
+const logoutbutton = document.querySelector('.logout-button');
 const loginbutton = document.querySelector('.LoginButton');
 const idInput = document.querySelector('.id-input');
 const pwInput = document.querySelector('.pw-input');
+const loginvisual = document.querySelector('.login');
+
+function logincheck(){
+  if(localStorage.login == 1){
+    loginvisual.style.display ='none'
+    logoutbutton.style.display='block'
+  }else{
+    logoutbutton.style.display='none'
+  }
+}
 
 
+logincheck()
 function loginhandler(){
   if(!idInput.value){
     return alert('아이디를 입력해주세요.')
@@ -28,10 +40,24 @@ function loginhandler(){
   }
 
   if( idInput.value == localStorage.id && pwInput.value == localStorage.pw){
-   alert('로그인 성공')
+   alert('로그인 성공');
+   localStorage.setItem("login", 1)
+   location.href='./login.html'
   }
 
 
 }
 
+
+function logouthandler(){
+  if(!localStorage.login){
+    return alert('이미 로그아웃 됐습니다.')
+  }
+  localStorage.removeItem("login");
+  alert('로그아웃 됐습니다.');
+  location.href='./login.html'
+  
+}
+
+logoutbutton.addEventListener('click',logouthandler);
 loginbutton.addEventListener('click',loginhandler)

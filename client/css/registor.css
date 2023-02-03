@@ -499,7 +499,7 @@ label{
   align-items: center;
 }
 input[class="check2"]{
-  display:none;
+  visibility: visible;
 }
 input[class="check2"] + label em{
   display:inline-block;

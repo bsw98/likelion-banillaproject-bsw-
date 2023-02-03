@@ -2,7 +2,7 @@
 {
   "scripts": {
     "all": "run-p serve start",
-    "serve": "json-server/data/data.json",
+    "serve": "data.json",
     "start": "npx live-server client --host=localhost --port=5500 --no-browser"
   },
   "devDependencies": {

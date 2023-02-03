@@ -387,6 +387,7 @@ input[class="check2"] + label em{
   background:url(../assets/icons/input_icon/isChecked=false.svg) 0 0 no-repeat ;
   margin-right: 5px;
 }
+
 input[class="check2"]:checked + label em{
   background:url(../assets/icons/input_icon/isChecked=true.svg) 0 0 no-repeat;
 }

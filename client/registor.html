@@ -10,9 +10,11 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
   <script src="./js/registor.js" type="module"></script>
   <link rel="stylesheet" href="./css/fontello.css" />
+  
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 
 
@@ -108,9 +110,9 @@
 
 
 
+  
   <fieldset>
-    <!-- <form method="post" action="#" class="register"> -->
-    <form class="register">
+    <form method="post" action="#" class="register">
 
       <legend>
         회원가입
@@ -127,7 +129,7 @@
 
       <ul class="register-list">
         <li>
-          <p class="important">아이디</p> <input class="button-size id-input" type="text" id="nameField" placeholder="아이디를 입력해주세요"
+          <p class="important">아이디</p> <input class="button-size" type="text" id="nameField" placeholder="아이디를 입력해주세요"
             required>
           <button id="submit1" type="submit" value="ID중복확인" class="side-button-size">중복확인</button>
         </li>
@@ -136,18 +138,18 @@
             required>
         </li>
         <li>
-          <p class="important">비밀번호 확인</p> <input class="button-size repw-input" type="password" placeholder="비밀번호를 한번 더 입력해주세요"
+          <p class="important">비밀번호 확인</p> <input class="button-size" type="password" placeholder="비밀번호를 한번 더 입력해주세요"
             required>
         </li>
         <li>
-          <p class="important">이름</p> <input class="button-size" type="text" placeholder="이름을 입력해주세요">
+          <p class="important">이름</p> <input class="button-size" type="text" placeholder="이름을 입력해주세요" required>
         </li>
         <li>
           <p class="important">이메일</p> <input class="button-size email-input" type="email" placeholder="예)marketkarly@karly.com"
             required> <button class="side-button-size">중복확인</button>
         </li>
         <li>
-          <p class="important">휴대폰</p> <input class="button-size" type="tel" placeholder="숫자만 입력해주세요." >
+          <p class="important">휴대폰</p> <input class="button-size" type="tel" placeholder="숫자만 입력해주세요." required>
           <button class="side-button-size">인증</button>
         </li>
         <li class="adress-list">
@@ -241,7 +243,6 @@
     </form>
 
   </fieldset>
-
 </main> 
 
   <!-- 푸터 -->
