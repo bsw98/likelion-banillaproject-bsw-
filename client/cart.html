@@ -6,19 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/login.css" />
+  <link rel="stylesheet" href="./css/cart.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
-  <script src="./js/login.js" type="module"></script>
+  <script src="./js/main.js" type="module"></script>
+  <script src="./js/productlist.js" type="module"></script>
+
   <link rel="stylesheet" href="./css/fontello.css" />
   
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 
 
-  <title>로그인</title>
+  <title>카트</title>
 
 </head>
 
@@ -57,7 +59,6 @@
 <ul class="topNavigation">
   <li><a href="./registor.html">회원가입</a></li>
   <li><a href="./login.html">로그인</a></li>
-  <li><button class="logout-button">로그아웃</button></li>
   <li><a href="#" class="CustomerService">고객센터 ▼</a></li>
 
 </ul>
@@ -106,25 +107,18 @@
   <a href="#" class="notice"><span class="maincolor">샛별 낮</span> 배송안내</a>
 </nav> 
 
-<main class="main center">
-  
-  <fieldset>
-    <form method="post" action="http://localhost:3000/user" class="login">
-     
-      <legend>로그인</legend>
 
-      <p>로그인</p>
-      <input type="text" placeholder="아이디를 입력해주세요" class="id-input LoginInput LoginButtonSize" required>
-      <input type="password" placeholder="비밀번호를 입력해주세요" class="pw-input LoginInput LoginButtonSize" required>
-      <ul class="FindIQ">
-        <li><a href="#">비밀번호 찾기</a></li>
-        <li><a href="#">아이디 찾기</a></li>
-      </ul>
-   
-      <button type="submit" class="LoginButton LoginButtonSize">로그인</button>
-      <a href="#" class="MembershipButton LoginButtonSize">회원가입</a>
-    </form> 
-  </fieldset>
+<main class="main">
+  <h2>장바구니</h2>
+  <div class="main-wrapper">
+  <section class="cart-list">카트리스트</section>
+  <section class="credit">크레딧</section>
+</div>
+
+
+
+
+
 </main> 
 
   <!-- 푸터 -->
