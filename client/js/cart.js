@@ -10,14 +10,31 @@ let selectAmount = document.querySelectorAll('.select-amount');
 let allCheck = document.querySelectorAll('.all-check');
 let moreButton = document.querySelectorAll('.more-button');
 let cartSubList = document.querySelectorAll('.cart-sub-list');
+let sumprice = document.querySelectorAll('.number');
+
 
 amount.textContent='1';
+sumprice[3].textContent = Number(price.textContent) + 3000;
+sumprice[1].textContent = 0;
+sumprice[0].textContent =  price.textContent;
 selectAmount[0].textContent= 0;
 selectAmount[1].textContent= 0;
 allAmount[0].textContent = `${subCheck.length}`;
 allAmount[1].textContent = `${subCheck.length}`;
 
+//배송지 변경 버튼 
+let btn = document.querySelector(".delivery-address-change")
+let addres = document.querySelector(".user-address")
 
+function showPrompt() {
+  let newaddres = prompt("배송지를 입력해주세요.");
+  if (newaddres != null) {
+    addres.innerHTML = newaddres;
+  }
+
+}
+
+btn.addEventListener("click", showPrompt);
 function calculator(e){
   e = e.target
   // 버튼 계산기
@@ -26,19 +43,22 @@ function calculator(e){
   if(e == plusbutton){
     
     i++
-    amount.textContent = i
-
-    price.textContent = `${i * 4980}원`
+    amount.textContent = i;
+    sumprice[0].textContent = `${i * 4980}`;
+    sumprice[3].textContent = `${(i * 4980)+3000}`;
+    price.textContent = `${i * 4980}`;
   }
   if(e== minusbutton){
     if(i==0){
     return i= 0;
   }
   
-  i--
+  i--;
   
-  amount.textContent = i
-  price.textContent = `${i * 4980}원`
+  amount.textContent = i;
+  sumprice[0].textContent = `${i * 4980}`;
+  sumprice[3].textContent = `${(i * 4980)+3000}`;
+  price.textContent = `${i * 4980}`;
 }
 
 }

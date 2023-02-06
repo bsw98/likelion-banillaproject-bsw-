@@ -321,10 +321,138 @@ label{
 
 }
 .credit{
-  margin-left:33.5px;
-  width: 284px;
-  background-color: pink;
+font-size: 16px;
+font-weight: 600;
+margin-left:33.5px;
+width: 284px;
 }
+
+.delivery-adders{
+  padding: 20px;
+}
+
+.addres{
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+.addres img{
+width: 36px;
+height: 36px;
+}
+
+.user-address{
+  text-align: left;
+  line-height: 150%;
+  padding-bottom: 12px;
+}
+
+.delivery-type{
+  text-align: left;
+  font-weight: 600;
+  font-size: 12.003px;
+  line-height: 150%;
+  color: var(--primary);
+  padding-bottom: 12px;
+}
+
+.delivery-address-change{
+  width: 244px;
+height: 44px;
+border: 1px solid #5F0080;
+border-radius: 4px;
+color: var(--primary);
+font-weight: 600;
+}
+
+.item-count{
+  font-weight:400;
+  padding: 20px;
+  background-color: var(--gray50);
+
+}
+
+.item-pirce,
+.item-sale,
+.delivery-fee,
+.pay,
+.point{
+  display: flex;
+  position: relative;
+  width: 244px;
+  height: 26px;
+  margin-bottom: 16px;
+}
+
+
+.pay{
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  border-top: 1px dashed var(--gray100)
+}
+
+
+.pay p:nth-child(2){
+  font-weight: 700;
+font-size: 28.43px;
+line-height: 140%;
+
+
+}
+
+.order-button{
+  width: 284px;
+height: 44px;
+background: var(--primary);
+color: var(--white);
+margin: 16px 0;
+}
+
+.guide{
+  text-align: left;
+  font-weight: 600;
+  font-size: 12.003px;
+  line-height: 150%;
+  color: var(--gray400);
+}
+
+
+.number{
+  position: absolute;
+  right: 20px;
+}
+
+.won{
+  font-weight: 600;
+  position: absolute;
+  right: 0px;
+}
+
+.point{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.point-tag{
+  width: 37px;
+  height: 18px;
+  background: var(--accent);
+  border-radius: 1px;
+  color: var(--white);
+  margin-right: 8px;
+  font-weight: 600;
+  font-size: 12.003px;
+  line-height: 150%;
+}
+
+.point p:nth-child(2){
+  font-weight: 600;
+font-size: 12.003px;
+}
+/* 카트 */
 .cart-main-list{
   position: relative;
   width: 100%;
@@ -414,7 +542,11 @@ figure{
   align-items: center;
 }
 .price{
-  margin-right:17px;
+  gap:0;
+}
+.item-won{
+ margin-left:-8px;
+ margin-right:16px;
 }
 /* 푸터 */
 .footer {
