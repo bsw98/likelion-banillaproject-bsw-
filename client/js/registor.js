@@ -26,6 +26,20 @@ function checkhandler(){
 
 allCheck.addEventListener('click',checkhandler)
 
+const useAgreement = document.querySelector('.use-agreement');
+
+function unCheckhandler(e){
+  e = e.target
+  
+  if(e.className == 'sub-check' && e.checked == false){
+    allCheck.checked = false;
+    
+  }
+}
+
+useAgreement.addEventListener('click',unCheckhandler)
+
+
 // 활성화버튼
 const register = document.querySelector('.register');
 

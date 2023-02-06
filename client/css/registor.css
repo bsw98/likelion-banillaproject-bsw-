@@ -294,7 +294,7 @@ button:disabled{
 }
 button{
   transition: all 400ms;
-}
+} 
 .register-tip{
   bottom: 0;
   right:0;
@@ -499,7 +499,7 @@ label{
   align-items: center;
 }
 input[class="check2"]{
-  visibility: visible;
+  display:none;
 }
 input[class="check2"] + label em{
   display:inline-block;

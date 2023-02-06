@@ -1,9 +1,7 @@
-
 {
-  "user": [{
-   
-  }],
-
+  "user": [
+    {}
+  ],
   "products": [
     {
       "id": "product-rksk",
