@@ -13,7 +13,7 @@
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
   <script src="./js/main.js" type="module"></script>
-  <script src="./js/productlist.js" type="module"></script>
+  <script src="./js/cart.js" type="module"></script>
 
   <link rel="stylesheet" href="./css/fontello.css" />
   
@@ -111,7 +111,56 @@
 <main class="main">
   <h2>장바구니</h2>
   <div class="main-wrapper">
-  <section class="cart-list">카트리스트</section>
+  <section class="cart-list">
+    <ul>
+      <li class="cart-main-list">
+        <input type="checkbox" class="all-check" id="all-check">
+        <label for="all-check"><em></em>전체선택(<P class="select-amount"></P>/<P class="all-amount"></P>)</label>
+        <button class="all-delete-button">선택삭제</button>
+      </li>
+      <li class="cart-main-list cart-item-list">
+        <img src="./assets/icons/cart/Type=Refrigerated.png" alt="냉장 식품" />냉장 식품<button class="more-button">∨</button>
+      </li>
+      <ul class="cart-sub-list">
+        <li>
+          <input type="checkbox" class="sub-check" id="sub-check1">
+          <label for="sub-check1"><em></em>상품선택</label>
+          <figure>
+            <img src="./assets/images/image.png" alt="상품 이미지" />
+            <figcaption>[풀무원]탱탱쫄면(4개입)</figcaption>
+          </figure>
+          <div class="amount-button">
+            <button class="minus-button">-</button>
+            <p class="amount">0</p>
+            <button class="plus-button" >+</button>
+          </div>
+          <p class="price">4,980원</p>
+          <button class="item-delete-button"><p class="a11y-hidden">상품 삭제 버튼</p>X</button>
+        </li>
+      </ul>
+      <li class="cart-main-list cart-item-list">
+        <img src="./assets/icons/cart/Type=Frozen.png" alt="냉동 식품" />냉동 식품<button class="more-button">∨</button>
+      </li>
+      <ul class="cart-sub-list">
+      
+
+      </ul>
+      <li class="cart-main-list cart-item-list">
+        <img src="./assets/icons/cart/Type=_Normal.png" alt="상온 식품" />상온 식품<button class="more-button">∨</button>
+      </li>
+      <ul class="cart-sub-list">
+       
+
+      </ul>
+      <li class="cart-main-list">
+        <input type="checkbox" class="all-check" id="all-check2">
+        <label for="all-check2"><em></em>전체선택(<P class="select-amount"></P>/<P class="all-amount"></P>)</label>
+        <button class="all-delete-button">선택삭제</button>
+      </li>
+    </ul>
+
+
+  </section>
   <section class="credit">크레딧</section>
 </div>
 

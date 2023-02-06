@@ -287,9 +287,8 @@ font-size: 16px;
 }
 
 /* 메인 */
-/* · */
 .is-active-hidden{
-    display:block !important;
+    display:none !important;
 }
 .main{
  
@@ -311,16 +310,112 @@ margin-bottom:48px;
   display:flex;
   justify-content: center;
 }
+label{
+  height: 100%;
+  display:flex;
+  align-items: center;
+  
+}
 .cart-list{
   width: 742px;
-  background-color: #898989;
+
 }
 .credit{
   margin-left:33.5px;
   width: 284px;
   background-color: pink;
 }
-  
+.cart-main-list{
+  position: relative;
+  width: 100%;
+  height: 56px;
+  padding: 16px 0px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  border-top: 1px solid #000000;
+}
+.cart-main-list:first-child{
+  border: none;
+}
+.more-button{
+  font-weight: 600;
+  position: absolute;
+  right:0;
+}
+.all-delete-button{
+  font-weight: 600;
+}
+.all-delete-button::before{
+  content: "ㅣ";
+  font-size: 12px;
+color: #333333;
+margin-right: 6px;
+}
+input[class="all-check"],input[class="sub-check"]{
+  display:none;
+}
+input[class="all-check"] + label em,input[class="sub-check"] + label em{
+  display:inline-block;
+  width: 24px;
+  height: 24px;
+  background:url(../assets/icons/input_icon/isChecked=false.svg) 0 0 no-repeat ;
+  margin-right: 5px;
+}
+
+input[class="all-check"]:checked + label em,input[class="sub-check"]:checked + label em{
+  background:url(../assets/icons/input_icon/isChecked=true.svg) 0 0 no-repeat;
+}
+.amount-button {
+  display: flex;
+  align-items: center;
+}
+.amount-button *{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+figure{
+  width: 345px;
+  gap:8px;
+  margin-right:8px;
+}
+.minus-button{
+  border:1px solid black;
+  border-right: 0;
+}
+.amount{
+  width: 30px;
+  border:1px solid black;
+  border-left: 0;
+  border-right: 0;
+}
+.plus-button{
+  border:1px solid black;
+  border-left: 0;
+  margin-right:76px;
+}
+.minus-button,.amount,.plus-button{
+  height: 30px;
+}
+.cart-sub-list li{
+  width: 100%;
+  height: 118px;
+  padding: 20px 0px;
+gap: 8px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+figure{
+  display: flex;
+  align-items: center;
+}
+.price{
+  margin-right:17px;
+}
 /* 푸터 */
 .footer {
   padding-top: 30px;
